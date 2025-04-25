@@ -1,6 +1,6 @@
     import React from 'react'
 
-    function Card({username,btnText ="visit me"}) {
+    function Card({username,btnText ="visit me",textline}) {
         console.log(username);
         
     return (
@@ -19,8 +19,8 @@
                 <div class="text-sky-500 dark:text-sky-400">
                     {username}
                 </div>
-                <div class="text-slate-700 dark:text-slate-500">
-                    Staff Engineer, Algolia
+                <div class="text textClass text-slate-700 dark:text-slate-500">
+                    {textline}
                 </div>
                 <div className="btn flex text-center rounded hover:bg-blue-400" ></div>
                 </figcaption>
