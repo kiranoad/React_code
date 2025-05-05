@@ -1,0 +1,77 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.main .nav{
+    height: fit-content;
+    position: sticky;
+    top:0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px;
+    color: #585858;
+}
+.main .nav img{
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid red,blue,green,pink,orchid;
+}
+.main-container{
+    flex-grow: 1;
+    overflow: scroll;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* width: 100%; */
+    /* flex-basis: 1; */
+    /* width: 100%; */
+    /* width: 100%; */
+/* border: solid gray; */
+    /* max-width: 900px; */
+    /* margin: auto; */
+    /* text-align: left; */
+}
+.main .greet{
+    margin: 50px 0px;
+    font-size: 45px;
+    color: #c4c7c5;
+    font-weight: 500;
+    padding: 20px;
+    /* border: solid; */
+
+}
+.main .greet span{
+    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546); -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    
+}
+.main .cards{
+    /* border: solid; */
+    display: grid;
+    max-width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill,minmax(180px,250px));
+    gap: 15px;
+    padding: 20px;
+}
+.main .cards .card{
+    height: 200px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.main .cards .card img{
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+}
