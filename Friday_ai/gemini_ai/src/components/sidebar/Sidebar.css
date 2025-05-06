@@ -47,6 +47,9 @@
 .sidebar .recent{
     display: flex;
     flex-direction: column;
+    text-align: left;
+    padding-left: 20px;
+    /* align-items: start; */
 }
 .sidebar .recent-title{
     margin-top: 30px;
@@ -64,6 +67,12 @@
 }
 .sidebar .recent-entry:hover{
     background-color: #e2e6eb;
+}
+.sidebar .recent-entry p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
 }
 
 .sidebar.bottom{
